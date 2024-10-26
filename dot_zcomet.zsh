@@ -14,4 +14,6 @@ zcomet load zsh-users/zsh-completions
 zcomet load zsh-users/zsh-syntax-highlighting
 zcomet load zsh-users/zsh-autosuggestions
 
+zcomet load lukechilds/zsh-nvm
+
 zcomet compinit

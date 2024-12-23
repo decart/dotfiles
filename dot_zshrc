@@ -39,8 +39,19 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.alias.zsh ] && source ~/.alias.zsh
 [ -f ~/.zcomet.zsh ] && source ~/.zcomet.zsh
+[ -f ~/.zinit.zsh ] && source ~/.zinit.zsh
 
 eval "$(oh-my-posh prompt init zsh --config ~/.amro.omp.json)"
 eval "$(zoxide init zsh)"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+. "/home/mansur/.deno/env"
+
+# pnpm
+export PNPM_HOME="/home/mansur/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

@@ -3,7 +3,7 @@
 brew install \
   ffind \
   bat \
-  exa \
+  eza \
   ripgrep \
   zoxide \
   git-delta \

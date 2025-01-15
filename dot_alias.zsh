@@ -1,14 +1,12 @@
 # Files list
-alias l="exa --icons --group-directories-first -lFh"
-alias la="exa --icons --group-directories-first -laFh"
-alias ldot="exa --icons --group-directories-first -ld .*"
-alias ll="exa --icons --group-directories-first -l"
-alias lr="exa --icons --group-directories-first -tRFh"
-alias ls="exa --icons --group-directories-first --color=always"
-alias lsa="exa --icons --group-directories-first -lah"
+alias la="eza --icons --group-directories-first -la"
+alias ll="eza --icons --group-directories-first -l"
+alias ls="eza --icons --group-directories-first --color=always"
+alias ldot="eza --icons --group-directories-first -ld .*"
 
 alias cat='bat -pp --theme="OneHalfDark"'
 alias less='bat --theme="OneHalfDark"'
 
 alias h='tldr'
 alias cls='clear'
+alias che='chezmoi'

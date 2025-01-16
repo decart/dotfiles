@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 brew install \
-  ffind \
+  fd \
   bat \
   eza \
   ripgrep \

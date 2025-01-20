@@ -12,3 +12,5 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 ZSH_PECO_HISTORY_OPTS="--layout=bottom-up --initial-filter=Fuzzy"
 
 NVM_LAZY_LOAD=true
+
+export PATH="$HOME/.emacs.d/bin:$PATH"

@@ -10,3 +10,5 @@ alias less='bat --theme="OneHalfDark"'
 alias h='tldr'
 alias cls='clear'
 alias che='chezmoi'
+
+alias emacs="emacs -nw"

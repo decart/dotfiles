@@ -11,4 +11,8 @@ alias h='tldr'
 alias cls='clear'
 alias che='chezmoi'
 
+alias gst='git status'
+alias gl='git pull'
+alias gp='git pull'
+
 alias emacs="emacs -nw"

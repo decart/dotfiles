@@ -16,3 +16,4 @@ alias gl='git pull'
 alias gp='git push'
 
 alias emacs="emacs -nw"
+alias cursor="/home/mansur/Applications/Cursor-1.2.2-x86_64.AppImage --no-sandbox"

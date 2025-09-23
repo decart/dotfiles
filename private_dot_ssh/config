@@ -1,0 +1,33 @@
+Host vpn
+  HostName 178.208.82.85
+  User root
+  Port 1846
+
+Host www
+  ServerAliveInterval 300
+  HostName 87.255.237.242
+  Port 60200
+  User www
+
+Host git.ivgpu.com
+  Hostname 87.255.237.242
+  Port 64100
+
+Host honey
+  HostName 92.255.76.19
+  User www
+
+Host dev
+  ServerAliveInterval 300
+  HostName 188.120.224.75
+  User mansur
+
+Host pgvpn
+  HostName 94.232.244.57
+  User root
+
+Host 3xui
+  HostName 94.232.244.57
+  User rtunnel
+  IdentityFile ~/.ssh/3xui
+  IdentitiesOnly yes

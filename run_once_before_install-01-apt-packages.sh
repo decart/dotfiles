@@ -11,9 +11,21 @@ ubuntu_install() {
   sudo apt install curl zsh zip unzip p7zip-full git python3-pip python3-venv tmux
 }
 
+alt_install() {
+  sudo apt-get update
+  sudo apt-get upgrade
+  sudo apt-get install llvm clang build-essential pkg-config libssl-devel kernel-headers-common
+  sudo apt-get install curl zsh zip unzip p7zip git python3-module-pip python3-module-virtualenv tmux
+}
+
 case $ID in
 ubuntu)
   echo -e "${C_GREEN} Find Ubuntu distr! Install packages ${NO_FORMAT}"
   ubuntu_install
+  ;;
+
+altlinux)
+  echo -e "${C_GREEN} Find Ubuntu distr! Install packages ${NO_FORMAT}"
+  alt_install
   ;;
 esac

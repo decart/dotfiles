@@ -13,4 +13,6 @@ brew install \
   lazygit \
   neovim \
   zinit \
+  yazi \
+  kanata \
   oh-my-posh

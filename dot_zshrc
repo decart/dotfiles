@@ -45,7 +45,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 [ -f ~/.zinit.zsh ] && source ~/.zinit.zsh
 [ -f ~/.deno/env ] && source ~/.deno/env
 
-eval "$(oh-my-posh prompt init zsh --config ~/.amro.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.amro.omp.json)"
 eval "$(zoxide init zsh)"
 
 

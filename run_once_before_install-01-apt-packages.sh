@@ -15,7 +15,7 @@ alt_install() {
   sudo apt-get update
   sudo apt-get upgrade
   sudo apt-get install llvm clang meson ninja-build build-essential pkg-config libssl-devel kernel-headers-common libinput-tools libinput-devel
-  sudo apt-get install curl zsh zip unzip p7zip git python3-module-pip python3-module-virtualenv tmux
+  sudo apt-get install curl zsh zip unzip p7zip git python3-module-pip python3-module-virtualenv tmux wl-clipboard
 }
 
 case $ID in

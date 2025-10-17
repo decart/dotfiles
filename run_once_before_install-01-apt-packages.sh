@@ -20,6 +20,7 @@ alt_install() {
 
 arch_install() {
   sudo pacman -Suy bluez bluez-utils
+  sudo pacman -Sy fd bat eza ripgrep zoxide git-delta tealdeer fzf lazygit neovim yazi
 
   sudo systemctl start bluetooth.service
   sudo systemctl enable bluetooth.service

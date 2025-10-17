@@ -18,6 +18,13 @@ alt_install() {
   sudo apt-get install curl zsh zip unzip p7zip git python3-module-pip python3-module-virtualenv tmux wl-clipboard
 }
 
+arch_install() {
+  sudo pacman -Suy bluez bluez-utils
+
+  sudo systemctl start bluetooth.service
+  sudo systemctl enable bluetooth.service
+}
+
 case $ID in
 ubuntu)
   echo -e "${C_GREEN} Find Ubuntu distr! Install packages ${NO_FORMAT}"

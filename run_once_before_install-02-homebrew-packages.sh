@@ -21,7 +21,7 @@ if brew --version > /dev/null 2>&1; then
     kanata \
     oh-my-posh
 else
-  echo "${NO_RED} Homebrew is not installed. Skip! ${NO_FORMAT}";
+  echo "${C_RED} Homebrew is not installed. Skip! ${NO_FORMAT}";
   exit 1
 fi
 

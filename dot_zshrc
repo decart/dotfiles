@@ -8,9 +8,6 @@ export PATH="$PATH:/opt/nvim-linux64/bin:/home/mansur/.local/bin"
 
 setopt histignorealldups sharehistory
 
-# Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
-
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTFILESIZE=1000000000
 HISTSIZE=3000
@@ -38,6 +35,8 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+[ -f ~/.zsh/vimode.zsh ] && source ~/.zsh/vimode.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.alias.zsh ] && source ~/.alias.zsh

@@ -22,7 +22,6 @@ if brew --version > /dev/null 2>&1; then
     oh-my-posh
 else
   echo -e "${C_RED} Homebrew is not installed. Skip! ${NO_FORMAT}";
-  exit 1
 fi
 
 

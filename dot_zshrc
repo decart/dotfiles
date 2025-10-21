@@ -1,5 +1,5 @@
 # Init homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+[ -f /home/linuxbrew/.linuxbrew/bin/brew ] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Set up the prompt
 [ -f ~/.zenv.zsh ] && source ~/.zenv.zsh

@@ -18,7 +18,7 @@ aur_helper() {
     CMD="paru -S"
   fi
 
-  eval "$CMD $1"
+  eval "$CMD $@"
 }
 
 ubuntu_install() {
@@ -40,7 +40,7 @@ arch_install() {
   sudo pacman -S --needed zsh zip unzip 7zip wl-clipboard python python-pip
   sudo pacman -S --needed fd bat eza ripgrep zoxide git-delta tealdeer fzf lazygit neovim yazi
 
-  aur_helper zinit kanata-git oh-my-posh-git
+  aur_helper kanata-git oh-my-posh-git
 
   sudo systemctl start bluetooth.service
   sudo systemctl enable bluetooth.service
@@ -55,5 +55,10 @@ ubuntu)
 altlinux)
   echo -e "${C_GREEN} Find AltLinux distr! Install packages ${NO_FORMAT}"
   alt_install
+  ;;
+
+arch)
+  echo -e "${C_GREEN} Find Arch linux distr! Install packages ${NO_FORMAT}"
+  arch_install
   ;;
 esac
